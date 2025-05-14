@@ -1,3 +1,10 @@
+//
+//  SceneDelegate.swift
+//  WeatherTestApp
+//
+//  Created by Nikita Chekmarev on 13.05.2025.
+//
+
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

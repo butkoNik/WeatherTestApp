@@ -1,12 +1,10 @@
 import Foundation
 
-// MARK: - Current Weather Response
 struct CurrentWeatherResponse: Codable {
     let location: Location
     let current: Current
 }
 
-// MARK: - Location
 struct Location: Codable {
     let name: String
     let region: String
@@ -16,7 +14,6 @@ struct Location: Codable {
     let localtime: String
 }
 
-// MARK: - Current Weather
 struct Current: Codable {
     let tempC: Double
     let tempF: Double
@@ -39,26 +36,22 @@ struct Current: Codable {
     }
 }
 
-// MARK: - Forecast Response
 struct ForecastResponse: Codable {
     let location: Location
     let current: Current
     let forecast: Forecast
 }
 
-// MARK: - Forecast
 struct Forecast: Codable {
     let forecastday: [ForecastDay]
 }
 
-// MARK: - Forecast Day
 struct ForecastDay: Codable {
     let date: String
     let day: Day
     let hour: [Hour]
 }
 
-// MARK: - Day
 struct Day: Codable {
     let maxtempC: Double
     let mintempC: Double
@@ -71,7 +64,6 @@ struct Day: Codable {
     }
 }
 
-// MARK: - Hour
 struct Hour: Codable {
     let time: String
     let tempC: Double
@@ -84,7 +76,6 @@ struct Hour: Codable {
     }
 }
 
-// MARK: - Condition
 struct Condition: Codable {
     let text: String
     let icon: String
